@@ -1,6 +1,6 @@
 # fluent-plugin-record-serializer
 
-[fluentd](http://fluentd.org) output/filter plugin that serialize a record.
+[fluentd](http://fluentd.org) filter plugin that serialize a record.
 
 [![Build Status](https://travis-ci.org/cooldaemon/fluent-plugin-record-serializer.svg?branch=master)](https://travis-ci.org/cooldaemon/fluent-plugin-record-serializer)
 [![Code Climate](https://codeclimate.com/github/cooldaemon/fluent-plugin-record-serializer/badges/gpa.svg)](https://codeclimate.com/github/cooldaemon/fluent-plugin-record-serializer)
