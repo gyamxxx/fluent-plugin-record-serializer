@@ -23,7 +23,7 @@ class RecordSerializerFilterTest < Test::Unit::TestCase
   ]
 
   def create_driver(conf=CONFIG)
-    Fluent::Test::FilterTestDriver.new(Fluent::RecordSerializerFilter, TAG).configure(conf)
+    Fluent::Test::Driver::Filter.new(Fluent::Plugin::RecordSerializerFilter).configure(conf)
   end
 
   def test_configure
