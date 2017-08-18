@@ -31,7 +31,7 @@ $ sudo /usr/lib64/fluent/ruby/bin/fluent-gem install fluent-plugin-record-serial
 
 ## Configuration
 
-In v0.12, you can use record_modifier filter.
+In v0.14 or v0.12, you can use record_modifier filter.
 
 ```
 <filter pattern>
