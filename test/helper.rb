@@ -13,10 +13,8 @@ $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'fileutils'
-require 'fluent/log'
-require 'fluent/test'
-
-$log = Fluent::Log.new(STDOUT, Fluent::Log::LEVEL_DEBUG)
+require 'fluent/plugin/filter'
+require 'fluent/plugin/output'
 
 unless defined?(Test::Unit::AssertionFailedError)
   class Test::Unit::AssertionFailedError < StandardError
