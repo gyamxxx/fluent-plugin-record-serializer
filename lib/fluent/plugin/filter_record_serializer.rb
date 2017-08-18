@@ -1,7 +1,8 @@
 require 'fluent/plugin/record_serializer'
+require 'fluent/plugin/filter'
 
 module Fluent
-  class RecordSerializerFilter < Filter
+  class Plugin::RecordSerializerFilter < Plugin::Filter
     Fluent::Plugin.register_filter('record_serializer', self)
 
     config_param :format, :string, :default => 'json'
