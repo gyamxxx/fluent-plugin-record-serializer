@@ -11,6 +11,10 @@ module Fluent
     include SetTagKeyMixin
     include Fluent::RecordSerializer
 
+    def multi_workers_ready?
+      true
+    end
+
     def filter(tag, time, record)
       begin
         serialized_record = serialize_record(@format, record)
