@@ -21,7 +21,7 @@ class RecordSerializerOutputTest < Test::Unit::TestCase
   ]
 
   def create_driver(conf=CONFIG)
-    Fluent::Test::OutputTestDriver.new(Fluent::RecordSerializerOutput).configure(conf)
+    Fluent::Test::Driver::Output.new(Fluent::Plugin::RecordSerializerOutput).configure(conf)
   end
 
   def test_configure
