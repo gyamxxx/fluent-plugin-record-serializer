@@ -1,9 +1,14 @@
 require 'fluent/plugin/record_serializer'
+require 'fluent/plugin/filter'
 
 module Fluent
-  class RecordSerializerOutput < Output
+  class Plugin::RecordSerializerOutput < Plugin::Output
     Fluent::Plugin.register_output('record_serializer', self)
 
+    def multi_workers_ready?
+      true
+    end
+    
     unless method_defined?(:router)
       define_method("router") { Fluent::Engine }
     end 
